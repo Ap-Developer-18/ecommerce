@@ -30,8 +30,6 @@ function App() {
     <>
       <Toaster position="top-center" />
       <Hero />
-      <Welcome />
-      <AboutUs />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<HomePage />} />

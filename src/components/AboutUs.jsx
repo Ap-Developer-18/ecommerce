@@ -5,7 +5,7 @@ import Button from './common/Button'
 
 const AboutUs = () => {
     return (
-        <div className='py-[160px] lg:max-w-[1290px] mx-auto px-6 container'>
+        <div className='pt-[160px] lg:max-w-[1290px] mx-auto px-6 container'>
             <div className='flex gap-6 items-center justify-between'>
                 <div className='max-w-[608px] w-full'>
                     <img className='w-full h-[572px] object-center object-cover' src={AboutUsImg} alt="about us image" />
