@@ -11,6 +11,7 @@ import ProductCard from "./components/common/ProductCard";
 import CartPage from "./components/CartPage";
 import { Toaster } from "react-hot-toast";
 import Welcome from "./components/Welcome";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const loading = useSelector((state) => state.ProductSlice.loading);
@@ -27,12 +28,13 @@ function App() {
 
   return (
     <>
-    <Toaster position="top-center" />
+      <Toaster position="top-center" />
       <Hero />
-      <Welcome/>
+      <Welcome />
+      <AboutUs />
       <Routes>
-        <Route path="/" element={<HomePage /> } />
-        <Route path="/product" element={<HomePage /> } />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/product" element={<HomePage />} />
         <Route path="/product/:id" element={<SingleProductPage />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>

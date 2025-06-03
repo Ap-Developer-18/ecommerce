@@ -45,7 +45,7 @@ const SingleProductPage = () => {
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">
-      <div className="lg:max-w-[1380px] mx-auto px-6 container  py-24">
+      <div className="lg:max-w-[1290px] mx-auto px-6 container  py-24">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img
             src={data.image}

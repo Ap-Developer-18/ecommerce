@@ -6,7 +6,7 @@ const HomePage = () => {
   const productsData = useSelector((state) => state.ProductSlice.products);
 
   return (
-    <div className="grid grid-cols-4 gap-6 lg:max-w-[1380px] mx-auto px-6 container my-20">
+    <div className="grid grid-cols-4 gap-6 lg:max-w-[1290px] mx-auto px-6 container my-20">
       {productsData.map((obj, index) => (
         <ProductCard obj={obj} key={index} />
       ))}

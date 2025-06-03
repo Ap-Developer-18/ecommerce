@@ -5,7 +5,7 @@ import Button from './common/Button'
 
 const Welcome = () => {
     return (
-        <div className='lg:max-w-[1380px] mx-auto px-6 container pt-14'>
+        <div className='lg:max-w-[1290px] mx-auto px-6 container pt-14'>
             <Heading simpleText="Welcome to Ecommerce our store" className="max-w-[380px]" />
             <div className='mt-4'>
                 <img className='h-[365px] w-full' src={WelcomeImg} alt="welcome" />

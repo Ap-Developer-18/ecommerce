@@ -8,7 +8,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <header className="text-gray-600">
-      <div className="lg:max-w-[1380px] mx-auto px-6 container flex flex-wrap py-5 flex-col md:flex-row items-center">
+      <div className="lg:max-w-[1290px] mx-auto px-6 container flex flex-wrap py-5 flex-col md:flex-row items-center">
         <div className="flex items-center justify-between w-full">
           <Link to={"/"} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <img src={PageLogo} alt="page logo" />
