@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  
+    --color-primary: #B80707;
+    --color-gray-700: #CCCCCC;
+    --leading-120: 120%;
+    --leading-160: 160%;
+}
+
+body {
+    background-color: black;
+    font-family: "Outfit", sans-serif;
+}
+
+.font-tc {
+    font-family: "WDXL Lubrifont TC", sans-serif;
 }

@@ -9,6 +9,8 @@ import { fetchProducts } from "./redux/actions";
 import Loader from "./components/common/Loader";
 import ProductCard from "./components/common/ProductCard";
 import CartPage from "./components/CartPage";
+import { Toaster } from "react-hot-toast";
+import Welcome from "./components/Welcome";
 
 function App() {
   const loading = useSelector((state) => state.ProductSlice.loading);
@@ -25,7 +27,9 @@ function App() {
 
   return (
     <>
+    <Toaster position="top-center" />
       <Hero />
+      <Welcome/>
       <Routes>
         <Route path="/" element={<HomePage /> } />
         <Route path="/product" element={<HomePage /> } />

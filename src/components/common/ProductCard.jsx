@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ obj }) => {
   return (
     <section>
-      <div className="bg-white rounded-xl h-full relative overflow-hidden flex flex-col justify-center p-4 shadow-[10px_1px_20px_#0000003b,_inset_-10px_-10px_57px_#ffffff] items-start">
+      <div className="bg-white rounded-xl h-full relative overflow-hidden flex flex-col justify-center p-3 shadow-[10px_1px_20px_#0000003b,_inset_-10px_-10px_57px_#ffffff] items-start">
         <div class="absolute w-full h-full bg-[#02020219] blur-[50px] -right-1/2 -bottom-1/2"></div>
         <div className="relative z-10">
           <img
