@@ -1,7 +1,7 @@
 export const navItems = [
     {
-        label: "Financing",
-        path: "/financing",
+        label: "Cart",
+        path: "/cart",
     },
     {
         label: "Sell My Items",

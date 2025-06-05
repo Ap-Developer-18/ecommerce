@@ -61,13 +61,14 @@ const SeeOurClassicItems = () => {
             >
                 {data.map((obj, index) => (
                     <SwiperSlide key={index}>
-                        <div
-                            className="bg-cover bg-center h-[400px] relative"
-                            style={{ backgroundImage: `url(${obj.image})` }}>
-                            <div className="absolute bottom-0 left-0 p-4 bg-[#00000080] w-full">
-                                <h3 className="text-nowrap overflow-hidden text-ellipsis">{obj.title}</h3>
-                                <p>${obj.price}</p>
-                            </div>
+                        <div>
+                            <img className="h-[365px] w-full object-cover object-center" src={obj.image} alt="work on img" />
+                            <h2 className="text-lg text-white font-medium title-font mb-2 mt-3">
+                                {obj.title.substring(0, 20)}
+                            </h2>
+                            <p className="leading-relaxed text-gray-700 text-base">
+                                {obj.description.substring(0, 100)}
+                            </p>
                         </div>
                     </SwiperSlide>
                 ))}
@@ -86,15 +87,15 @@ const SeeOurClassicItems = () => {
                 <div className="flex gap-4">
                     <button
                         onClick={goPrev}
-                        className="size-16 cursor-pointer rounded-full border border-white flex justify-center items-center"
+                        className="size-12 cursor-pointer rounded-full border border-white flex justify-center items-center"
                     >
-                        <IoIosArrowBack className="text-white" size={32} />
+                        <IoIosArrowBack className="text-white" size={22} />
                     </button>
                     <button
                         onClick={goNext}
-                        className="size-16 cursor-pointer rounded-full border border-white flex justify-center items-center"
+                        className="size-12 cursor-pointer rounded-full border border-white flex justify-center items-center"
                     >
-                        <IoIosArrowForward className="text-white" size={32} />
+                        <IoIosArrowForward className="text-white" size={22} />
                     </button>
                 </div>
             </div>
