@@ -1,135 +1,89 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PageLogo from "../../assets/image/svg/logo.svg";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
-  return(
- <footer className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-        </svg>
-        <span className="ml-3 text-xl">Tailblocks</span>
-      </a>
-      <p className="mt-2 text-sm text-gray-500">
-        Air plant banjo lyft occupy retro adaptogen indego
-      </p>
-    </div>
-    <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-          CATEGORIES
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-          CATEGORIES
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-          CATEGORIES
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-          CATEGORIES
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div className="bg-gray-100">
-    <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-gray-500 text-sm text-center sm:text-left">
-        © 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
-          @knyttneve
-        </a>
-      </p>
-      <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a className="text-gray-500">
-          <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-          </svg>
-        </a>
-        <a className="ml-3 text-gray-500">
-          <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-          </svg>
-        </a>
-        <a className="ml-3 text-gray-500">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
-            <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-          </svg>
-        </a>
-        <a className="ml-3 text-gray-500">
-          <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={0} className="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-            <circle cx={4} cy={4} r={2} stroke="none" />
-          </svg>
-        </a>
-      </span>
-    </div>
-  </div>
-</footer>
+  return (
+    <footer>
+      <div className="text-[#C1C1C1] lg:max-w-[1290px] container mx-auto px-6 pt-20 pb-10">
+        <div className="flex items-start  justify-between gap-10">
+          {/* Logo and Description */}
+          <div className="w-full md:w-[40%]">
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img src={PageLogo} alt="Logo" className="w-32" />
+            </Link>
+            <p className="text-sm leading-relaxed text-[#999]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem voluptate adipisci tempor
+            </p>
+            <div className="flex gap-4 mt-4">
+              <Link to="/">
+                <FaFacebook className="text-[#C1C1C1] hover:text-white transition" size={22} />
+              </Link>
+              <Link to="/">
+                <FaInstagram className="text-[#C1C1C1] hover:text-white transition" size={22} />
+              </Link>
+              <Link to="/">
+                <FaTwitter className="text-[#C1C1C1] hover:text-white transition" size={22} />
+              </Link>
+              <Link to="/">
+                <FaLinkedinIn className="text-[#C1C1C1] hover:text-white transition" size={22} />
+              </Link>
+            </div>
+          </div>
 
-)};
+          {/* Footer Categories */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full md:w-[60%]">
+            {/* Company */}
+            <div>
+              <h2 className="text-white font-semibold mb-4 text-sm">Company</h2>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/about" className="hover:text-white">About Us</Link></li>
+                <li><Link to="/careers" className="hover:text-white">Careers</Link></li>
+                <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
+              </ul>
+            </div>
+
+            {/* Support */}
+            <div>
+              <h2 className="text-white font-semibold mb-4 text-sm">Support</h2>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/help" className="hover:text-white">Help Center</Link></li>
+                <li><Link to="/faq" className="hover:text-white">FAQs</Link></li>
+                <li><Link to="/shipping" className="hover:text-white">Shipping</Link></li>
+                <li><Link to="/returns" className="hover:text-white">Returns</Link></li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h2 className="text-white font-semibold mb-4 text-sm">Resources</h2>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/terms" className="hover:text-white">Terms</Link></li>
+                <li><Link to="/privacy" className="hover:text-white">Privacy</Link></li>
+                <li><Link to="/guides" className="hover:text-white">Guides</Link></li>
+                <li><Link to="/sitemap" className="hover:text-white">Sitemap</Link></li>
+              </ul>
+            </div>
+
+            {/* Map / Location */}
+            <div>
+              <h2 className="text-white font-semibold mb-4 text-sm">Our Location</h2>
+              <div className="text-sm text-[#999] leading-relaxed">
+                1234 Startup Lane<br />
+                Bengaluru, India<br />
+                +91 98765 43210
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-4 text-xs text-gray-700 text-center border-t border-[#2F2F2F]">
+        © 2023 PC CLASSIC CAR
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

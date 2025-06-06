@@ -5,11 +5,11 @@ import Button from "./Button";
 const ProductCard = ({ obj }) => {
   return (
     <section>
-      <div className="h-full bg-[#191919] relative overflow-hidden flex flex-col justify-center items-start">
+      <div className="h-full bg-[#191919] relative overflow-hidden flex flex-col justify-center items-start border border-[#2F2F2F]">
         <div class="absolute w-full h-full bg-[#02020219] blur-[50px] -right-1/2 -bottom-1/2"></div>
         <div className="relative z-10 flex flex-col h-full w-full justify-between">
           <img
-            className="h-[300px] w-full object-cover object-center"
+            className="h-[200px] w-full object-cover object-center"
             src={obj.image}
             alt="content"
           />

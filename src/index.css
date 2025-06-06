@@ -9,6 +9,10 @@
     --leading-160: 160%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     font-family: "Outfit", sans-serif;
@@ -16,4 +20,23 @@ body {
 
 .font-tc {
     font-family: "WDXL Lubrifont TC", sans-serif;
+}
+
+/* index.css or tailwind.css */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    border: 2px solid #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFFFFF;
 }

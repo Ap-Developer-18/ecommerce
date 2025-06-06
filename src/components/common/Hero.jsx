@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex gap-6">
             <nav className="flex items-center gap-6">
               {navItems.map((obj, index) => (
-                <Link key={index} to={obj.path} className="text-gray-700">
+                <Link key={index} to={obj.path} className="text-gray-700 hover:text-white duration-300">
                   {obj.label}
                 </Link>
               ))}

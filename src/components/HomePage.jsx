@@ -6,6 +6,8 @@ import AboutUs from "./AboutUs";
 import Heading from "./common/Heading";
 import InvestMent from "./InvestMent";
 import SeeOurClassicItems from "./SeeOurClassicItems";
+import Faqs from "./Faqs";
+import GetInTouch from "./GetInTouch";
 
 const HomePage = () => {
   const productsData = useSelector((state) => state.ProductSlice.products);
@@ -25,6 +27,8 @@ const HomePage = () => {
       </div>
       <InvestMent />
       <SeeOurClassicItems />
+      <Faqs />
+      <GetInTouch />
     </>
   );
 };

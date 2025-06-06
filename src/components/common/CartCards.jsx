@@ -18,9 +18,9 @@ const CartCards = ({ item }) => {
                 <div>
                     <h3 className="font-medium text-sm text-white">{item.title}</h3>
                     <div className="text-sm text-gray-500 flex gap-3 mt-2">
-                        <button className="hover:underline">♡ Add to Favorites</button>
+                        <button className="hover:underline cursor-pointer">♡ Add to Favorites</button>
                         <button
-                            className="text-red-500 hover:underline"
+                            className="text-red-500 cursor-pointer hover:underline"
                             onClick={() => dispatch(removeCart(item.id))}
                         >
                             ✕ Remove
@@ -28,6 +28,7 @@ const CartCards = ({ item }) => {
                     </div>
                 </div>
             </div>
+            <div className="font-medium text-sm text-white">$ {item.price}</div>
         </div>
     );
 };

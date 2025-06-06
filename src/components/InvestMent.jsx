@@ -5,9 +5,9 @@ import Button from './common/Button'
 
 const InvestMent = () => {
     return (
-        <div className='pt-[160px]'>
+        <div className='pt-[160px] lg:max-w-[1290px] mx-auto px-6 container'>
             <div
-                className="w-full py-[211px] flex justify-center items-center bg-no-repeat bg-cover bg-center"
+                className="w-full py-[170px] flex justify-center items-center bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url(${InvestMentImg})` }}>
                 <div className='max-w-[691px] w-full mx-auto'>
                     <Heading className="text-5xl text-center" simpleText="PC Investments specializes in buying and selling classic cars." />

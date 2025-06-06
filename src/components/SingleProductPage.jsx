@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaStar, FaTwitter } from "react-icons/fa";
 import { useDispatch } from 'react-redux'
 import { addProduct } from "../redux/Cart.Slice";
 import Button from "./common/Button";
+import SingleProductLoading from "./common/SingleProductLoading";
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -30,7 +31,7 @@ const SingleProductPage = () => {
     fetchSingleProduct();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <SingleProductLoading />;
 
   const AddToCart = () => {
     const item = {
@@ -50,7 +51,7 @@ const SingleProductPage = () => {
         <div className="flex gap-6 items-center">
           <img src={data.image}
             alt="ecommerce"
-            className="lg:w-[40%] w-full lg:h-auto h-64 object-cover object-center rounded"
+            className="lg:w-[40%] w-full h-[350px] object-cover object-center rounded"
           />
           <div className="w-full">
             <h2 className="text-sm uppercase title-font text-primary tracking-widest">
